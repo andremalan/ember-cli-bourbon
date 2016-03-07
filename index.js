@@ -11,9 +11,9 @@ module.exports = {
   },
 
   treeForStyles: function() {
-    var bourbonPath = path.join(this.project.bowerDirectory, 'bourbon', 'app');
+    var bourbonPath = path.join(this.project.bowerDirectory, 'bourbon', 'core');
     var bourbonTree = new Funnel(this.treeGenerator(bourbonPath), {
-      srcDir: '/assets/stylesheets',
+      srcDir: '/',
       destDir: '/app/styles'
     });
     return bourbonTree;
